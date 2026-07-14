@@ -19,6 +19,7 @@ The application rejects invalid operation types and division by zero.
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
 ## Docker Reminder
 
