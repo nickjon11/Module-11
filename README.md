@@ -1,41 +1,22 @@
-# Module 10 – Secure User Model, Pydantic Validation, Database Testing, and Docker Deployment
+# Module 11 Calculation Model
 
-## Overview
+This project extends the Module 10 FastAPI application with a SQLAlchemy
+Calculation model, Pydantic validation, calculation factory classes, unit
+tests, PostgreSQL integration tests, and CI/CD deployment.
 
-This project extends the FastAPI Calculator application from Module 9 by adding a secure user management system using SQLAlchemy and Pydantic.
+## Supported Operations
 
-New features include:
+- Add
+- Sub
+- Multiply
+- Divide
 
-- Secure SQLAlchemy User model
-- Password hashing using Argon2 (pwdlib)
-- Pydantic validation
-- PostgreSQL database integration
-- User CRUD functionality
-- Unit and integration testing
-- Docker containerization
-- GitHub Actions CI/CD
-- Docker Hub deployment
+The application rejects invalid operation types and division by zero.
 
----
+## Run Locally
 
-## Technologies Used
-
-- Python 3.12
-- FastAPI
-- SQLAlchemy
-- PostgreSQL
-- Pydantic
-- pwdlib (Argon2)
-- Pytest
-- Docker
-- Docker Compose
-- GitHub Actions
-
----
-
-## Docker Login
-
-Due to Github, you have to supply your own username and token. You can manually change it in 'github\workflows\ci-cd.yml' and in line 73-74, replace: 'DOCKERHUB_USERNAME' and 'DOCKERHUB_TOKEN' with your own. 
-
----
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 
