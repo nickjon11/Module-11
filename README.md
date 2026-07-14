@@ -20,3 +20,9 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
+## Docker Reminder
+
+Like Module 10, you will need to supply your own account in order to grant access to this. 
+
+Go to ci-cd.yml, line 73-74 and change the username and password with your own. It should work as intended after that. 
+
